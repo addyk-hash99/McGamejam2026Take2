@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dxwnu1wd8je8s"]
+
+[ext_resource type="PackedScene" uid="uid://dheiwcfoujdsb" path="res://Assets/4_sided_dice.glb" id="1_jfeu1"]
+
+[node name="Die" type="RigidBody3D" unique_id=764338624]
+
+[node name="Sketchfab_Scene" parent="." unique_id=370412420 instance=ExtResource("1_jfeu1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.176847, -10.53816, 5.799016)
