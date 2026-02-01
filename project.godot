@@ -19,6 +19,10 @@ run/main_scene="res://Example World/Objects/World/world.tscn"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://Title.png"
 
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/terrain_3d/plugin.cfg")
+
 [filesystem]
 
 import/fbx/enabled=false
