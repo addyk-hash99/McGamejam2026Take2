@@ -2254,7 +2254,7 @@ mesh = SubResource("ArrayMesh_kn6m3")
 skeleton = NodePath("")
 
 [node name="blasterP2" type="Node3D" parent="Camera/LeanPivot/MainCamera/Weapons_Manager/Weapons_Models" unique_id=759413662]
-transform = Transform3D(-0.97236997, -0.2334076, -0.0040748655, 0, 0.01745548, -0.999848, 0.23344313, -0.9722221, -0.016973201, 0.32, 1.014, -0.35)
+transform = Transform3D(-0.97236997, -0.23340762, -0.0040748655, 0, 0.01745548, -0.999848, 0.23344313, -0.97222215, -0.016973201, 0.32, 1.014, -0.35)
 visible = false
 
 [node name="blasterP" type="MeshInstance3D" parent="Camera/LeanPivot/MainCamera/Weapons_Manager/Weapons_Models/blasterP2" unique_id=16802495]
@@ -2286,9 +2286,10 @@ collision_mask = 36
 debug_shape_custom_color = Color(0, 1, 0, 1)
 
 [node name="SpotLight3D" type="SpotLight3D" parent="Camera/LeanPivot/MainCamera" unique_id=44243306]
-transform = Transform3D(1, 0, 0, 0, 0.8958592, -0.4443381, 0, 0.4443381, 0.8958592, 0, -1.0144908, -1.2905617)
+transform = Transform3D(1, 0, 0, 0, 0.9682044, 0.25016037, 0, -0.25016037, 0.9682044, 0, 0.68954206, -1.2905617)
 light_color = Color(1, 0.8901961, 0.78039217, 1)
 light_energy = 10.0
+light_volumetric_fog_energy = 0.0
 shadow_enabled = true
 shadow_bias = 0.05
 spot_range = 10.0

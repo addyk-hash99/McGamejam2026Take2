@@ -28,10 +28,12 @@
 
 [sub_resource type="Environment" id="Environment_1lw4l"]
 background_mode = 1
+fog_enabled = true
 fog_mode = 1
 fog_light_color = Color(0.078431375, 0.2, 0, 1)
-fog_density = 1.0
-volumetric_fog_density = 0.1843
+fog_density = 0.806
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.0343
 
 [sub_resource type="Resource" id="Resource_t8nnn"]
 script = ExtResource("5_khw4j")
@@ -67,6 +69,12 @@ reserve_ammo = 4
 albedo_texture = ExtResource("12_7osse")
 uv1_triplanar = true
 
+[sub_resource type="Resource" id="Resource_kxg2o"]
+resource_local_to_scene = true
+script = ExtResource("5_khw4j")
+weapon = ExtResource("6_fjphs")
+current_ammo = 30
+
 [sub_resource type="Resource" id="Resource_r8gv3"]
 resource_local_to_scene = true
 script = ExtResource("5_khw4j")
@@ -94,8 +102,8 @@ current_ammo = 30
 [sub_resource type="Resource" id="Resource_21bmr"]
 resource_local_to_scene = true
 script = ExtResource("5_khw4j")
-weapon = ExtResource("6_fjphs")
-current_ammo = 30
+weapon = ExtResource("4_u04vv")
+current_ammo = 5
 
 [sub_resource type="Resource" id="Resource_fst20"]
 resource_local_to_scene = true
@@ -124,8 +132,8 @@ current_ammo = 5
 [sub_resource type="Resource" id="Resource_wy8i3"]
 resource_local_to_scene = true
 script = ExtResource("5_khw4j")
-weapon = ExtResource("4_u04vv")
-current_ammo = 5
+weapon = ExtResource("8_38tmb")
+current_ammo = 30
 
 [sub_resource type="Resource" id="Resource_gt2t5"]
 resource_local_to_scene = true
@@ -148,8 +156,8 @@ current_ammo = 30
 [sub_resource type="Resource" id="Resource_natk6"]
 resource_local_to_scene = true
 script = ExtResource("5_khw4j")
-weapon = ExtResource("8_38tmb")
-current_ammo = 30
+weapon = ExtResource("10_xtha2")
+current_ammo = 9
 
 [sub_resource type="Resource" id="Resource_hqebh"]
 resource_local_to_scene = true
@@ -170,12 +178,6 @@ weapon = ExtResource("10_xtha2")
 current_ammo = 9
 
 [sub_resource type="Resource" id="Resource_korph"]
-resource_local_to_scene = true
-script = ExtResource("5_khw4j")
-weapon = ExtResource("10_xtha2")
-current_ammo = 9
-
-[sub_resource type="Resource" id="Resource_l8bwe"]
 resource_local_to_scene = true
 script = ExtResource("5_khw4j")
 weapon = ExtResource("10_xtha2")
@@ -381,79 +383,79 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 255.14
 
 [node name="blasterI_Clip" parent="ammo" unique_id=1440652189 instance=ExtResource("9_764ue")]
 transform = Transform3D(-0.0581563, 0.998308, -1.59995e-08, 5.86793e-08, 1.9445e-08, 1, 0.998308, 0.0581563, -5.97109e-08, 11.9669, 2.51447, -9.74606)
-weapon = SubResource("Resource_r8gv3")
+weapon = SubResource("Resource_kxg2o")
 
 [node name="blasterI_Clip2" parent="ammo" unique_id=622287598 instance=ExtResource("9_764ue")]
 transform = Transform3D(-0.0581562, 0.998308, -1.59995e-08, 5.86793e-08, 1.9445e-08, 1, 0.998308, 0.0581562, -5.97109e-08, 11.8789, 2.51447, -9.48588)
-weapon = SubResource("Resource_glh4a")
+weapon = SubResource("Resource_r8gv3")
 
 [node name="blasterI_Clip3" parent="ammo" unique_id=1536755863 instance=ExtResource("9_764ue")]
 transform = Transform3D(-0.0581562, 0.998308, -1.59995e-08, 5.86793e-08, 1.9445e-08, 1, 0.998308, 0.0581562, -5.97109e-08, 11.8524, 2.51447, -9.10553)
-weapon = SubResource("Resource_q7at6")
+weapon = SubResource("Resource_glh4a")
 
 [node name="blasterI_Clip4" parent="ammo" unique_id=1538331310 instance=ExtResource("9_764ue")]
 transform = Transform3D(-0.0581562, 0.998308, -1.59995e-08, 5.86793e-08, 1.9445e-08, 1, 0.998308, 0.0581562, -5.97109e-08, 11.8524, 2.51447, -8.98027)
-weapon = SubResource("Resource_bcyq2")
+weapon = SubResource("Resource_q7at6")
 
 [node name="blasterI_Clip5" parent="ammo" unique_id=174030394 instance=ExtResource("9_764ue")]
 transform = Transform3D(-0.0581562, 0.998308, -1.59995e-08, 5.86793e-08, 1.9445e-08, 1, 0.998308, 0.0581562, -5.97109e-08, 11.8353, 2.51447, -9.26194)
-weapon = SubResource("Resource_21bmr")
+weapon = SubResource("Resource_bcyq2")
 
 [node name="blasterN_Clip" parent="ammo" unique_id=1842462374 instance=ExtResource("9_qorrx")]
 transform = Transform3D(-0.5, 0.866025, 4.37114e-08, 5.97108e-08, -1.59995e-08, 1, 0.866025, 0.5, -4.37114e-08, 11.8557, 2.41896, -8.45054)
-weapon = SubResource("Resource_fst20")
+weapon = SubResource("Resource_21bmr")
 
 [node name="blasterN_Clip2" parent="ammo" unique_id=2120201640 instance=ExtResource("9_qorrx")]
 transform = Transform3D(-0.5, 0.866025, 4.37114e-08, 5.97108e-08, -1.59995e-08, 1, 0.866025, 0.5, -4.37114e-08, 11.8817, 2.45091, -8.30067)
-weapon = SubResource("Resource_mt2ev")
+weapon = SubResource("Resource_fst20")
 
 [node name="blasterN_Clip3" parent="ammo" unique_id=1043144152 instance=ExtResource("9_qorrx")]
 transform = Transform3D(-0.5, 0.866025, 4.37114e-08, 5.97108e-08, -1.59995e-08, 1, 0.866025, 0.5, -4.37114e-08, 11.8817, 2.45091, -8.15514)
-weapon = SubResource("Resource_tu1aa")
+weapon = SubResource("Resource_mt2ev")
 
 [node name="blasterN_Clip4" parent="ammo" unique_id=1583391434 instance=ExtResource("9_qorrx")]
 transform = Transform3D(-0.5, 0.866025, 4.37114e-08, 5.97108e-08, -1.59995e-08, 1, 0.866025, 0.5, -4.37114e-08, 11.8817, 2.45091, -7.98603)
-weapon = SubResource("Resource_1vrs5")
+weapon = SubResource("Resource_tu1aa")
 
 [node name="blasterN_Clip5" parent="ammo" unique_id=1605986862 instance=ExtResource("9_qorrx")]
 transform = Transform3D(-0.5, 0.866025, 4.37114e-08, 5.97108e-08, -1.59995e-08, 1, 0.866025, 0.5, -4.37114e-08, 11.8817, 2.45091, -7.80583)
-weapon = SubResource("Resource_wy8i3")
+weapon = SubResource("Resource_1vrs5")
 
 [node name="blasterL_Clip" parent="ammo" unique_id=1220542367 instance=ExtResource("11_xavrm")]
 transform = Transform3D(-0.451749, 0.892145, 1.27005e-08, 5.97109e-08, 1.59995e-08, 1, 0.892145, 0.451749, -6.04985e-08, 11.9947, 2.48029, -7.47362)
-weapon = SubResource("Resource_gt2t5")
+weapon = SubResource("Resource_wy8i3")
 
 [node name="blasterL_Clip2" parent="ammo" unique_id=1604957623 instance=ExtResource("11_xavrm")]
 transform = Transform3D(0.45382, 0.891093, -4.59471e-08, 1.59995e-08, -5.97109e-08, -1, -0.891093, 0.45382, -4.1355e-08, 11.9522, 2.44837, -7.28242)
-weapon = SubResource("Resource_kuldh")
+weapon = SubResource("Resource_gt2t5")
 
 [node name="blasterL_Clip3" parent="ammo" unique_id=721369529 instance=ExtResource("11_xavrm")]
 transform = Transform3D(0.5, 0.866025, -4.37114e-08, 1.59995e-08, -5.97109e-08, -1, -0.866025, 0.5, -4.37114e-08, 11.8852, 2.49294, -7.05531)
-weapon = SubResource("Resource_choul")
+weapon = SubResource("Resource_kuldh")
 
 [node name="blasterL_Clip4" parent="ammo" unique_id=1536971855 instance=ExtResource("11_xavrm")]
 transform = Transform3D(-0.258819, 0.965926, -7.96526e-15, 5.97108e-08, 1.59995e-08, 1, 0.965926, 0.258819, -6.18172e-08, 11.8581, 2.5402, -6.8148)
-weapon = SubResource("Resource_natk6")
+weapon = SubResource("Resource_choul")
 
 [node name="blasterM_clip" parent="ammo" unique_id=1464034320 instance=ExtResource("11_7y05e")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 11.7864, 2.51904, -5.86928)
-weapon = SubResource("Resource_hqebh")
+weapon = SubResource("Resource_natk6")
 
 [node name="blasterM_clip2" parent="ammo" unique_id=295018174 instance=ExtResource("11_7y05e")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 11.7864, 2.51904, -5.62425)
-weapon = SubResource("Resource_j3qt0")
+weapon = SubResource("Resource_hqebh")
 
 [node name="blasterM_clip3" parent="ammo" unique_id=1121354960 instance=ExtResource("11_7y05e")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 11.7864, 2.51904, -5.32416)
-weapon = SubResource("Resource_apwex")
+weapon = SubResource("Resource_j3qt0")
 
 [node name="blasterM_clip4" parent="ammo" unique_id=437584174 instance=ExtResource("11_7y05e")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 11.7864, 2.51904, -5.06811)
-weapon = SubResource("Resource_korph")
+weapon = SubResource("Resource_apwex")
 
 [node name="blasterM_clip5" parent="ammo" unique_id=2134131818 instance=ExtResource("11_7y05e")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 11.7864, 2.51904, -4.82932)
-weapon = SubResource("Resource_l8bwe")
+weapon = SubResource("Resource_korph")
 
 [node name="Player_Character" parent="." unique_id=1319073198 instance=ExtResource("10_nucft")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 257.18225, 12.025367, 45.27786)
