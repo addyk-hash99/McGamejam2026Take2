@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://24065usjigmr"]
+
+[ext_resource type="Script" uid="uid://om0h17t7ln4k" path="res://Scripts/botScript.gd" id="1_mo174"]
+[ext_resource type="PackedScene" uid="uid://bdp46y5mimopu" path="res://Assets/dummymale.glb" id="1_n8o8f"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pul5b"]
+custom_solver_bias = 1.0
+margin = 5.0
+size = Vector3(7, 3.5727005, 7)
+
+[node name="Bot" type="Node3D" unique_id=899363947]
+script = ExtResource("1_mo174")
+
+[node name="BotSprite" parent="." unique_id=831233034 instance=ExtResource("1_n8o8f")]
+transform = Transform3D(0.6309763, 0, 0, 0, 0.576573, 0, 0, 0, 0.8820809, 0, 0.02268529, 0)
+
+[node name="Eyes" type="Node3D" parent="." unique_id=683100171]
+
+[node name="SightRange" type="Area3D" parent="." unique_id=421027579 groups=["Player"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.632402, 0)
+collision_layer = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SightRange" unique_id=971884117]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.3487637, -0.012141228)
+shape = SubResource("BoxShape3D_pul5b")
+metadata/_edit_lock_ = true
+
+[connection signal="body_entered" from="SightRange" to="." method="_on_sight_range_body_entered"]
+[connection signal="body_exited" from="SightRange" to="." method="_on_sight_range_body_exited"]

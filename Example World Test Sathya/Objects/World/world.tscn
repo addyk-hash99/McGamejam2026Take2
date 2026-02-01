@@ -1,0 +1,627 @@
+[gd_scene format=3 uid="uid://xf1kka64f1vw"]
+
+[ext_resource type="Environment" uid="uid://bqp54syxqnqww" path="res://Player_Controller/world_environment.tres" id="1_7d2ts"]
+[ext_resource type="PackedScene" uid="uid://dqls7oye7kwyj" path="res://Example World Test Sathya/Objects/World/target.tscn" id="2_ymjqe"]
+[ext_resource type="PackedScene" uid="uid://gtthejj2wmyj" path="res://Player_Controller/Spawnable_Objects/Weapons/blaster_n.tscn" id="3_xx824"]
+[ext_resource type="Script" uid="uid://d2ltu6105v6x0" path="res://Player_Controller/scripts/Weapon_State_Machine/WeaponSlot.gd" id="4_b0mxt"]
+[ext_resource type="Resource" uid="uid://c1jg0ifn7yvve" path="res://Player_Controller/scripts/Weapon_State_Machine/Weapon_Resources/blasterN.tres" id="5_6decb"]
+[ext_resource type="PackedScene" uid="uid://cvbk5bxenpxey" path="res://Player_Controller/Spawnable_Objects/Weapons/blaster_I.tscn" id="6_colpa"]
+[ext_resource type="Resource" uid="uid://yc1f2j7pl4vr" path="res://Player_Controller/scripts/Weapon_State_Machine/Weapon_Resources/blasterI.tres" id="7_iuwdx"]
+[ext_resource type="PackedScene" uid="uid://catx2kysw47d8" path="res://Player_Controller/Spawnable_Objects/Weapons/blaster_L.tscn" id="8_tu1l1"]
+[ext_resource type="Resource" uid="uid://bwrs8ensewkgc" path="res://Player_Controller/scripts/Weapon_State_Machine/Weapon_Resources/blasterL.tres" id="9_7ymj1"]
+[ext_resource type="PackedScene" uid="uid://x8nhs2cer2to" path="res://Player_Controller/Spawnable_Objects/Weapons/blaster_m.tscn" id="10_ou3wo"]
+[ext_resource type="Resource" uid="uid://cd8msvjysh2uv" path="res://Player_Controller/scripts/Weapon_State_Machine/Weapon_Resources/blasterM.tres" id="11_svypq"]
+[ext_resource type="PackedScene" uid="uid://dwgt7gwe3gfyy" path="res://Player_Controller/Spawnable_Objects/Weapons/blasterQ.tscn" id="12_ld5gs"]
+[ext_resource type="Resource" uid="uid://dgayjkjx4mckc" path="res://Player_Controller/scripts/Weapon_State_Machine/Weapon_Resources/blasterQ.tres" id="13_t1i5w"]
+[ext_resource type="PackedScene" uid="uid://dl236agqx8rjp" path="res://Player_Controller/Spawnable_Objects/Clips/blaster_i_clip.tscn" id="14_42f7c"]
+[ext_resource type="PackedScene" uid="uid://cjxvrad2c6vh8" path="res://Player_Controller/Spawnable_Objects/Clips/blaster_n_clip.tscn" id="15_hefck"]
+[ext_resource type="PackedScene" uid="uid://br6g3dtbytwpu" path="res://Player_Controller/Spawnable_Objects/Clips/blaster_L_clip.tscn" id="16_um0bo"]
+[ext_resource type="PackedScene" uid="uid://cgt2lt4ultlaq" path="res://Player_Controller/Spawnable_Objects/Clips/blaster_m_clip.tscn" id="17_u3n5w"]
+[ext_resource type="PackedScene" uid="uid://oc13h3au02ro" path="res://Player_Controller/player_character.tscn" id="18_401nt"]
+[ext_resource type="Shader" uid="uid://hr37g2cfyinu" path="res://Example World Test Sathya/Objects/World/world.tres" id="19_4ijva"]
+[ext_resource type="Texture2D" uid="uid://bc8cbjeughdxy" path="res://Example World Test Sathya/Models/Textures/prototype texture/Dark/texture_01.png" id="20_s5m35"]
+[ext_resource type="PackedScene" uid="uid://cnpf7jvbxcx06" path="res://Example World Test Sathya/Objects/World/box_1.tscn" id="21_q83i0"]
+[ext_resource type="PackedScene" uid="uid://24065usjigmr" path="res://Scenes/bot.tscn" id="23_xx824"]
+
+[sub_resource type="Resource" id="Resource_t8nnn"]
+script = ExtResource("4_b0mxt")
+weapon = ExtResource("5_6decb")
+current_ammo = 9
+reserve_ammo = 9
+
+[sub_resource type="Resource" id="Resource_wewep"]
+script = ExtResource("4_b0mxt")
+weapon = ExtResource("7_iuwdx")
+current_ammo = 30
+reserve_ammo = 30
+
+[sub_resource type="Resource" id="Resource_qhfra"]
+script = ExtResource("4_b0mxt")
+weapon = ExtResource("9_7ymj1")
+current_ammo = 30
+reserve_ammo = 30
+
+[sub_resource type="Resource" id="Resource_7xmcw"]
+script = ExtResource("4_b0mxt")
+weapon = ExtResource("11_svypq")
+current_ammo = 9
+reserve_ammo = 9
+
+[sub_resource type="Resource" id="Resource_ntxxd"]
+script = ExtResource("4_b0mxt")
+weapon = ExtResource("13_t1i5w")
+current_ammo = 2
+reserve_ammo = 4
+
+[sub_resource type="Resource" id="Resource_ymjqe"]
+resource_local_to_scene = true
+script = ExtResource("4_b0mxt")
+weapon = ExtResource("7_iuwdx")
+current_ammo = 30
+
+[sub_resource type="Resource" id="Resource_xx824"]
+resource_local_to_scene = true
+script = ExtResource("4_b0mxt")
+weapon = ExtResource("7_iuwdx")
+current_ammo = 30
+
+[sub_resource type="Resource" id="Resource_b0mxt"]
+resource_local_to_scene = true
+script = ExtResource("4_b0mxt")
+weapon = ExtResource("7_iuwdx")
+current_ammo = 30
+
+[sub_resource type="Resource" id="Resource_6decb"]
+resource_local_to_scene = true
+script = ExtResource("4_b0mxt")
+weapon = ExtResource("7_iuwdx")
+current_ammo = 30
+
+[sub_resource type="Resource" id="Resource_colpa"]
+resource_local_to_scene = true
+script = ExtResource("4_b0mxt")
+weapon = ExtResource("7_iuwdx")
+current_ammo = 30
+
+[sub_resource type="Resource" id="Resource_iuwdx"]
+resource_local_to_scene = true
+script = ExtResource("4_b0mxt")
+weapon = ExtResource("5_6decb")
+current_ammo = 5
+
+[sub_resource type="Resource" id="Resource_tu1l1"]
+resource_local_to_scene = true
+script = ExtResource("4_b0mxt")
+weapon = ExtResource("5_6decb")
+current_ammo = 5
+
+[sub_resource type="Resource" id="Resource_7ymj1"]
+resource_local_to_scene = true
+script = ExtResource("4_b0mxt")
+weapon = ExtResource("5_6decb")
+current_ammo = 5
+
+[sub_resource type="Resource" id="Resource_ou3wo"]
+resource_local_to_scene = true
+script = ExtResource("4_b0mxt")
+weapon = ExtResource("5_6decb")
+current_ammo = 5
+
+[sub_resource type="Resource" id="Resource_svypq"]
+resource_local_to_scene = true
+script = ExtResource("4_b0mxt")
+weapon = ExtResource("5_6decb")
+current_ammo = 5
+
+[sub_resource type="Resource" id="Resource_ld5gs"]
+resource_local_to_scene = true
+script = ExtResource("4_b0mxt")
+weapon = ExtResource("9_7ymj1")
+current_ammo = 30
+
+[sub_resource type="Resource" id="Resource_t1i5w"]
+resource_local_to_scene = true
+script = ExtResource("4_b0mxt")
+weapon = ExtResource("9_7ymj1")
+current_ammo = 30
+
+[sub_resource type="Resource" id="Resource_42f7c"]
+resource_local_to_scene = true
+script = ExtResource("4_b0mxt")
+weapon = ExtResource("9_7ymj1")
+current_ammo = 30
+
+[sub_resource type="Resource" id="Resource_hefck"]
+resource_local_to_scene = true
+script = ExtResource("4_b0mxt")
+weapon = ExtResource("9_7ymj1")
+current_ammo = 30
+
+[sub_resource type="Resource" id="Resource_um0bo"]
+resource_local_to_scene = true
+script = ExtResource("4_b0mxt")
+weapon = ExtResource("11_svypq")
+current_ammo = 9
+
+[sub_resource type="Resource" id="Resource_u3n5w"]
+resource_local_to_scene = true
+script = ExtResource("4_b0mxt")
+weapon = ExtResource("11_svypq")
+current_ammo = 9
+
+[sub_resource type="Resource" id="Resource_401nt"]
+resource_local_to_scene = true
+script = ExtResource("4_b0mxt")
+weapon = ExtResource("11_svypq")
+current_ammo = 9
+
+[sub_resource type="Resource" id="Resource_4ijva"]
+resource_local_to_scene = true
+script = ExtResource("4_b0mxt")
+weapon = ExtResource("11_svypq")
+current_ammo = 9
+
+[sub_resource type="Resource" id="Resource_s5m35"]
+resource_local_to_scene = true
+script = ExtResource("4_b0mxt")
+weapon = ExtResource("11_svypq")
+current_ammo = 9
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_xbow4"]
+render_priority = 0
+shader = ExtResource("19_4ijva")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c868b"]
+albedo_texture = ExtResource("20_s5m35")
+uv1_triplanar = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_t62yf"]
+albedo_texture = ExtResource("20_s5m35")
+uv1_triplanar = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ov6po"]
+albedo_texture = ExtResource("20_s5m35")
+uv1_triplanar = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yv2ts"]
+albedo_texture = ExtResource("20_s5m35")
+uv1_triplanar = true
+
+[node name="World" type="Node3D" unique_id=257894853 groups=["Player", "World"]]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=60370576]
+environment = ExtResource("1_7d2ts")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=495337424]
+transform = Transform3D(-0.843573, -0.446602, -0.298213, -0.283274, -0.101708, 0.953631, -0.456224, 0.888933, -0.0407129, 0, 5.80189, 0)
+layers = 524289
+light_color = Color(1, 1, 0.780392, 1)
+shadow_enabled = true
+
+[node name="Enemy" type="Node3D" parent="." unique_id=1929210250]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 15.8799, 0, 14.0176)
+
+[node name="Target" parent="Enemy" unique_id=886884267 instance=ExtResource("2_ymjqe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.80966, 3.28587, 8.01964)
+
+[node name="Target2" parent="Enemy" unique_id=1245143752 instance=ExtResource("2_ymjqe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.80966, 3.28587, 7.4464)
+
+[node name="Target3" parent="Enemy" unique_id=860451451 instance=ExtResource("2_ymjqe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.80966, 3.28587, 6.71841)
+
+[node name="Target4" parent="Enemy" unique_id=1466926430 instance=ExtResource("2_ymjqe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.80966, 3.28587, 5.99316)
+
+[node name="Target5" parent="Enemy" unique_id=807619205 instance=ExtResource("2_ymjqe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.80966, 3.28587, 5.27576)
+
+[node name="Target6" parent="Enemy" unique_id=1913976827 instance=ExtResource("2_ymjqe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.80966, 2.5638, 8.01964)
+
+[node name="Target7" parent="Enemy" unique_id=1424064079 instance=ExtResource("2_ymjqe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.80966, 2.5638, 7.4464)
+
+[node name="Target8" parent="Enemy" unique_id=1140233249 instance=ExtResource("2_ymjqe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.80966, 2.5638, 6.71841)
+
+[node name="Target9" parent="Enemy" unique_id=1616681292 instance=ExtResource("2_ymjqe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.80966, 2.5638, 5.99316)
+
+[node name="Target10" parent="Enemy" unique_id=1526783810 instance=ExtResource("2_ymjqe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.80966, 2.5638, 5.27576)
+
+[node name="Target11" parent="Enemy" unique_id=397061787 instance=ExtResource("2_ymjqe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.80966, 3.28587, 4.58913)
+
+[node name="Target12" parent="Enemy" unique_id=1895506897 instance=ExtResource("2_ymjqe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.80966, 3.28587, 4.01589)
+
+[node name="Target13" parent="Enemy" unique_id=1053126796 instance=ExtResource("2_ymjqe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.80966, 3.28587, 3.2879)
+
+[node name="Target14" parent="Enemy" unique_id=1206815851 instance=ExtResource("2_ymjqe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.80966, 3.28587, 2.56265)
+
+[node name="Target15" parent="Enemy" unique_id=482312776 instance=ExtResource("2_ymjqe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.80966, 3.28587, 1.84525)
+
+[node name="Target16" parent="Enemy" unique_id=819768111 instance=ExtResource("2_ymjqe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.80966, 2.5638, 4.58913)
+
+[node name="Target17" parent="Enemy" unique_id=1879588095 instance=ExtResource("2_ymjqe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.80966, 2.5638, 4.01589)
+
+[node name="Target18" parent="Enemy" unique_id=1093531189 instance=ExtResource("2_ymjqe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.80966, 2.5638, 3.2879)
+
+[node name="Target19" parent="Enemy" unique_id=1341086552 instance=ExtResource("2_ymjqe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.80966, 2.5638, 2.56265)
+
+[node name="Target20" parent="Enemy" unique_id=2097990854 instance=ExtResource("2_ymjqe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.80966, 2.5638, 1.84525)
+
+[node name="Target21" parent="Enemy" unique_id=1271882929 instance=ExtResource("2_ymjqe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.80966, 3.28587, 1.24738)
+
+[node name="Target22" parent="Enemy" unique_id=611221712 instance=ExtResource("2_ymjqe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.80966, 3.28587, 0.674143)
+
+[node name="Target23" parent="Enemy" unique_id=1645870343 instance=ExtResource("2_ymjqe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.80966, 3.28587, -0.0538473)
+
+[node name="Target24" parent="Enemy" unique_id=1901807982 instance=ExtResource("2_ymjqe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.80966, 3.28587, -0.779098)
+
+[node name="Target25" parent="Enemy" unique_id=873459243 instance=ExtResource("2_ymjqe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.80966, 3.28587, -1.4965)
+
+[node name="Target26" parent="Enemy" unique_id=1610785965 instance=ExtResource("2_ymjqe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.80966, 2.5638, 1.24738)
+
+[node name="Target27" parent="Enemy" unique_id=805917236 instance=ExtResource("2_ymjqe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.80966, 2.5638, 0.674143)
+
+[node name="Target28" parent="Enemy" unique_id=572587304 instance=ExtResource("2_ymjqe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.80966, 2.5638, -0.0538473)
+
+[node name="Target29" parent="Enemy" unique_id=2011782078 instance=ExtResource("2_ymjqe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.80966, 2.5638, -0.779098)
+
+[node name="Target30" parent="Enemy" unique_id=328673583 instance=ExtResource("2_ymjqe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.80966, 2.5638, -1.4965)
+
+[node name="Weapons" type="Node3D" parent="." unique_id=1419111243]
+
+[node name="blasterN" parent="Weapons" unique_id=1033428279 instance=ExtResource("3_xx824")]
+transform = Transform3D(-0.00543903, 0.00995553, -0.999936, 0.0236036, 0.999673, 0.00982454, 0.999706, -0.0235486, -0.00567224, 21.2958, 1.83198, 11.6068)
+freeze = true
+weapon = SubResource("Resource_t8nnn")
+
+[node name="blasterI2" parent="Weapons" unique_id=613165239 instance=ExtResource("6_colpa")]
+transform = Transform3D(-4.36023e-08, -3.08644e-09, -1, -0.0706095, 0.997504, 0, 0.997504, 0.0706095, -4.37114e-08, 22.2535, 1.85956, 11.7285)
+freeze = true
+weapon = SubResource("Resource_wewep")
+
+[node name="blasterL2" parent="Weapons" unique_id=790586691 instance=ExtResource("8_tu1l1")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 19.9483, 1.94057, 11.4826)
+freeze = true
+weapon = SubResource("Resource_qhfra")
+
+[node name="blasterM" parent="Weapons" unique_id=153073272 instance=ExtResource("10_ou3wo")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 18.1838, 1.99763, 11.5761)
+sleeping = true
+freeze = true
+weapon = SubResource("Resource_7xmcw")
+
+[node name="BlasterQ" parent="Weapons" unique_id=636426932 instance=ExtResource("12_ld5gs")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 16.3823, 1.92516, 11.5924)
+freeze = true
+weapon = SubResource("Resource_ntxxd")
+
+[node name="ammo" type="Node3D" parent="." unique_id=1774968972]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 12.9044, 0, 0)
+
+[node name="blasterI_Clip" parent="ammo" unique_id=1037054459 instance=ExtResource("14_42f7c")]
+transform = Transform3D(-0.0581563, 0.998308, -1.59995e-08, 5.86793e-08, 1.9445e-08, 1, 0.998308, 0.0581563, -5.97109e-08, 11.9669, 2.51447, -9.74606)
+weapon = SubResource("Resource_ymjqe")
+
+[node name="blasterI_Clip2" parent="ammo" unique_id=1899709650 instance=ExtResource("14_42f7c")]
+transform = Transform3D(-0.0581562, 0.998308, -1.59995e-08, 5.86793e-08, 1.9445e-08, 1, 0.998308, 0.0581562, -5.97109e-08, 11.8789, 2.51447, -9.48588)
+weapon = SubResource("Resource_xx824")
+
+[node name="blasterI_Clip3" parent="ammo" unique_id=642916126 instance=ExtResource("14_42f7c")]
+transform = Transform3D(-0.0581562, 0.998308, -1.59995e-08, 5.86793e-08, 1.9445e-08, 1, 0.998308, 0.0581562, -5.97109e-08, 11.8524, 2.51447, -9.10553)
+weapon = SubResource("Resource_b0mxt")
+
+[node name="blasterI_Clip4" parent="ammo" unique_id=1965240865 instance=ExtResource("14_42f7c")]
+transform = Transform3D(-0.0581562, 0.998308, -1.59995e-08, 5.86793e-08, 1.9445e-08, 1, 0.998308, 0.0581562, -5.97109e-08, 11.8524, 2.51447, -8.98027)
+weapon = SubResource("Resource_6decb")
+
+[node name="blasterI_Clip5" parent="ammo" unique_id=1221950344 instance=ExtResource("14_42f7c")]
+transform = Transform3D(-0.0581562, 0.998308, -1.59995e-08, 5.86793e-08, 1.9445e-08, 1, 0.998308, 0.0581562, -5.97109e-08, 11.8353, 2.51447, -9.26194)
+weapon = SubResource("Resource_colpa")
+
+[node name="blasterN_Clip" parent="ammo" unique_id=1189186923 instance=ExtResource("15_hefck")]
+transform = Transform3D(-0.5, 0.866025, 4.37114e-08, 5.97108e-08, -1.59995e-08, 1, 0.866025, 0.5, -4.37114e-08, 11.8557, 2.41896, -8.45054)
+weapon = SubResource("Resource_iuwdx")
+
+[node name="blasterN_Clip2" parent="ammo" unique_id=873022161 instance=ExtResource("15_hefck")]
+transform = Transform3D(-0.5, 0.866025, 4.37114e-08, 5.97108e-08, -1.59995e-08, 1, 0.866025, 0.5, -4.37114e-08, 11.8817, 2.45091, -8.30067)
+weapon = SubResource("Resource_tu1l1")
+
+[node name="blasterN_Clip3" parent="ammo" unique_id=1441609479 instance=ExtResource("15_hefck")]
+transform = Transform3D(-0.5, 0.866025, 4.37114e-08, 5.97108e-08, -1.59995e-08, 1, 0.866025, 0.5, -4.37114e-08, 11.8817, 2.45091, -8.15514)
+weapon = SubResource("Resource_7ymj1")
+
+[node name="blasterN_Clip4" parent="ammo" unique_id=458266445 instance=ExtResource("15_hefck")]
+transform = Transform3D(-0.5, 0.866025, 4.37114e-08, 5.97108e-08, -1.59995e-08, 1, 0.866025, 0.5, -4.37114e-08, 11.8817, 2.45091, -7.98603)
+weapon = SubResource("Resource_ou3wo")
+
+[node name="blasterN_Clip5" parent="ammo" unique_id=1651288070 instance=ExtResource("15_hefck")]
+transform = Transform3D(-0.5, 0.866025, 4.37114e-08, 5.97108e-08, -1.59995e-08, 1, 0.866025, 0.5, -4.37114e-08, 11.8817, 2.45091, -7.80583)
+weapon = SubResource("Resource_svypq")
+
+[node name="blasterL_Clip" parent="ammo" unique_id=1756238873 instance=ExtResource("16_um0bo")]
+transform = Transform3D(-0.451749, 0.892145, 1.27005e-08, 5.97109e-08, 1.59995e-08, 1, 0.892145, 0.451749, -6.04985e-08, 11.9947, 2.48029, -7.47362)
+weapon = SubResource("Resource_ld5gs")
+
+[node name="blasterL_Clip2" parent="ammo" unique_id=1878615112 instance=ExtResource("16_um0bo")]
+transform = Transform3D(0.45382, 0.891093, -4.59471e-08, 1.59995e-08, -5.97109e-08, -1, -0.891093, 0.45382, -4.1355e-08, 11.9522, 2.44837, -7.28242)
+weapon = SubResource("Resource_t1i5w")
+
+[node name="blasterL_Clip3" parent="ammo" unique_id=531480773 instance=ExtResource("16_um0bo")]
+transform = Transform3D(0.5, 0.866025, -4.37114e-08, 1.59995e-08, -5.97109e-08, -1, -0.866025, 0.5, -4.37114e-08, 11.8852, 2.49294, -7.05531)
+weapon = SubResource("Resource_42f7c")
+
+[node name="blasterL_Clip4" parent="ammo" unique_id=308160929 instance=ExtResource("16_um0bo")]
+transform = Transform3D(-0.258819, 0.965926, -7.96526e-15, 5.97108e-08, 1.59995e-08, 1, 0.965926, 0.258819, -6.18172e-08, 11.8581, 2.5402, -6.8148)
+weapon = SubResource("Resource_hefck")
+
+[node name="blasterM_clip" parent="ammo" unique_id=2042478457 instance=ExtResource("17_u3n5w")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 11.7864, 2.51904, -5.86928)
+weapon = SubResource("Resource_um0bo")
+
+[node name="blasterM_clip2" parent="ammo" unique_id=513346645 instance=ExtResource("17_u3n5w")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 11.7864, 2.51904, -5.62425)
+weapon = SubResource("Resource_u3n5w")
+
+[node name="blasterM_clip3" parent="ammo" unique_id=1127623490 instance=ExtResource("17_u3n5w")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 11.7864, 2.51904, -5.32416)
+weapon = SubResource("Resource_401nt")
+
+[node name="blasterM_clip4" parent="ammo" unique_id=1286097406 instance=ExtResource("17_u3n5w")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 11.7864, 2.51904, -5.06811)
+weapon = SubResource("Resource_4ijva")
+
+[node name="blasterM_clip5" parent="ammo" unique_id=466065212 instance=ExtResource("17_u3n5w")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 11.7864, 2.51904, -4.82932)
+weapon = SubResource("Resource_s5m35")
+
+[node name="Player_Character" parent="." unique_id=1399586109 groups=["Player", "Target"] instance=ExtResource("18_401nt")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.4779215, 1.473438, 13.97651)
+collision_mask = 7
+
+[node name="LevelGeometry" type="CSGCombiner3D" parent="." unique_id=608528189]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.26881528, 0.8802588, 0)
+use_collision = true
+
+[node name="CSGBox3D" type="CSGBox3D" parent="LevelGeometry" unique_id=1494185106]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 5.86237, 0)
+size = Vector3(36, 12.7247, 50)
+material = SubResource("ShaderMaterial_xbow4")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="LevelGeometry" unique_id=1804040490]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.17847, 6.80383, 0)
+operation = 2
+size = Vector3(34.2788, 10.8418, 48)
+material = SubResource("StandardMaterial3D_c868b")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="LevelGeometry" unique_id=1424643166]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.5, 2.39544, -15.9147)
+size = Vector3(11, 5.40485, 17)
+material = SubResource("StandardMaterial3D_t62yf")
+
+[node name="CSGPolygon3D" type="CSGPolygon3D" parent="LevelGeometry" unique_id=1424121831]
+transform = Transform3D(-4.37114e-08, 0, 3.97416, 0, 1, 0, -1, 0, -1.73716e-07, -0.0259876, 1.31426, -2.51557)
+polygon = PackedVector2Array(0, 0, 0, 0, 1.25373, 1.03499, 4.24766, 3.22178, 4.91613, 3.80578, 5, 0, 1, 0)
+depth = 2.54
+material = SubResource("StandardMaterial3D_ov6po")
+
+[node name="CSGPolygon3D2" type="CSGPolygon3D" parent="LevelGeometry" unique_id=32329639]
+transform = Transform3D(-4.37114e-08, 0, 3.97416, 0, 1, 0, -1, 0, -1.73716e-07, 24.4923, 1.31426, -5.5095)
+polygon = PackedVector2Array(0, 0, 0, 0, 1.25373, 1.03499, 4.24766, 3.22178, 4.91613, 3.80578, 5, 0, 1, 0)
+depth = 0.65
+material = SubResource("StandardMaterial3D_ov6po")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="LevelGeometry" unique_id=1831957222]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.931463, 1.86819, -7.91462)
+size = Vector3(2, 1, 1)
+material = SubResource("StandardMaterial3D_yv2ts")
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="LevelGeometry" unique_id=1566707234]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.931463, 2.36819, -8.91462)
+size = Vector3(2, 2, 1)
+material = SubResource("StandardMaterial3D_yv2ts")
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="LevelGeometry" unique_id=1803788830]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.931463, 2.86819, -9.91462)
+size = Vector3(2, 3, 1)
+material = SubResource("StandardMaterial3D_yv2ts")
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="LevelGeometry" unique_id=823643292]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.931463, 3.22879, -17.4146)
+size = Vector3(2, 3.72119, 14)
+material = SubResource("StandardMaterial3D_yv2ts")
+
+[node name="CSGBox3D8" type="CSGBox3D" parent="LevelGeometry" unique_id=1528410870]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.93146, 3.22879, -17.4146)
+size = Vector3(2, 3.72119, 14)
+material = SubResource("StandardMaterial3D_yv2ts")
+
+[node name="CSGBox3D9" type="CSGBox3D" parent="LevelGeometry" unique_id=1209588028]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.93146, 3.22879, -17.4146)
+size = Vector3(2, 3.72119, 14)
+material = SubResource("StandardMaterial3D_yv2ts")
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="LevelGeometry" unique_id=441181190]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.9315, 3.22879, -17.4146)
+size = Vector3(2, 3.72119, 14)
+material = SubResource("StandardMaterial3D_yv2ts")
+
+[node name="CSGBox3D12" type="CSGBox3D" parent="LevelGeometry" unique_id=1321511660]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.9315, 2.36819, 18.5854)
+size = Vector3(2, 2, 14)
+material = SubResource("StandardMaterial3D_yv2ts")
+
+[node name="CSGBox3D13" type="CSGBox3D" parent="LevelGeometry" unique_id=2098066998]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 18.9315, 2.36819, 12.5924)
+size = Vector3(2, 2, 14)
+material = SubResource("StandardMaterial3D_yv2ts")
+
+[node name="CSGBox3D15" type="CSGBox3D" parent="LevelGeometry" unique_id=1087779979]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 18.9315, 11.6163, 3.32557)
+size = Vector3(9.26416, 0.80957, 14)
+material = SubResource("StandardMaterial3D_yv2ts")
+
+[node name="CSGBox3D14" type="CSGBox3D" parent="LevelGeometry" unique_id=1404443481]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 19.0214, 3.44817, 12.557)
+operation = 2
+size = Vector3(2.4917, 2, 9.15033)
+material = SubResource("StandardMaterial3D_yv2ts")
+
+[node name="CSGBox3D11" type="CSGBox3D" parent="LevelGeometry" unique_id=2017660785]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.2508, 3.22879, -17.4146)
+size = Vector3(2.63867, 3.72119, 14)
+material = SubResource("StandardMaterial3D_yv2ts")
+
+[node name="ShadowGeometry" type="CSGCombiner3D" parent="." unique_id=371577849]
+layers = 524288
+cast_shadow = 3
+
+[node name="CSGBox3D" type="CSGBox3D" parent="ShadowGeometry" unique_id=358717356]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 5.86237, 0)
+size = Vector3(36, 12.7247, 50)
+material = SubResource("StandardMaterial3D_t62yf")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="ShadowGeometry" unique_id=749230345]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.17847, 6.80383, 0)
+operation = 2
+size = Vector3(34.2788, 10.8418, 48)
+material = SubResource("StandardMaterial3D_t62yf")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="ShadowGeometry" unique_id=1344714122]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.5, 2.39544, -15.9147)
+size = Vector3(11, 5.40485, 17)
+material = SubResource("StandardMaterial3D_t62yf")
+
+[node name="CSGPolygon3D" type="CSGPolygon3D" parent="ShadowGeometry" unique_id=614442562]
+transform = Transform3D(-4.37114e-08, 0, 3.97416, 0, 1, 0, -1, 0, -1.73716e-07, -0.0259876, 1.31426, -2.51557)
+polygon = PackedVector2Array(0, 0, 0, 0, 1.25373, 1.03499, 4.24766, 3.22178, 4.91613, 3.80578, 5, 0, 1, 0)
+depth = 2.54
+material = SubResource("StandardMaterial3D_ov6po")
+
+[node name="CSGPolygon3D2" type="CSGPolygon3D" parent="ShadowGeometry" unique_id=1134762048]
+transform = Transform3D(-4.37114e-08, 0, 3.97416, 0, 1, 0, -1, 0, -1.73716e-07, 24.4923, 1.31426, -5.5095)
+polygon = PackedVector2Array(0, 0, 0, 0, 1.25373, 1.03499, 4.24766, 3.22178, 4.91613, 3.80578, 5, 0, 1, 0)
+depth = 0.65
+material = SubResource("StandardMaterial3D_ov6po")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="ShadowGeometry" unique_id=991542124]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.931463, 1.86819, -7.91462)
+size = Vector3(2, 1, 1)
+material = SubResource("StandardMaterial3D_yv2ts")
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="ShadowGeometry" unique_id=877705541]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.931463, 2.36819, -8.91462)
+size = Vector3(2, 2, 1)
+material = SubResource("StandardMaterial3D_yv2ts")
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="ShadowGeometry" unique_id=1133915552]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.931463, 2.86819, -9.91462)
+size = Vector3(2, 3, 1)
+material = SubResource("StandardMaterial3D_yv2ts")
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="ShadowGeometry" unique_id=1796784375]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.931463, 3.22879, -17.4146)
+size = Vector3(2, 3.72119, 14)
+material = SubResource("StandardMaterial3D_yv2ts")
+
+[node name="CSGBox3D8" type="CSGBox3D" parent="ShadowGeometry" unique_id=1793725929]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.93146, 3.22879, -17.4146)
+size = Vector3(2, 3.72119, 14)
+material = SubResource("StandardMaterial3D_yv2ts")
+
+[node name="CSGBox3D9" type="CSGBox3D" parent="ShadowGeometry" unique_id=60431422]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.93146, 3.22879, -17.4146)
+size = Vector3(2, 3.72119, 14)
+material = SubResource("StandardMaterial3D_yv2ts")
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="ShadowGeometry" unique_id=1508889976]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.9315, 3.22879, -17.4146)
+size = Vector3(2, 3.72119, 14)
+material = SubResource("StandardMaterial3D_yv2ts")
+
+[node name="CSGBox3D12" type="CSGBox3D" parent="ShadowGeometry" unique_id=235966172]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.9315, 2.36819, 18.5854)
+size = Vector3(2, 2, 14)
+material = SubResource("StandardMaterial3D_yv2ts")
+
+[node name="CSGBox3D13" type="CSGBox3D" parent="ShadowGeometry" unique_id=1830875192]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 18.9315, 2.36819, 12.5924)
+size = Vector3(2, 2, 14)
+material = SubResource("StandardMaterial3D_yv2ts")
+
+[node name="CSGBox3D15" type="CSGBox3D" parent="ShadowGeometry" unique_id=1837472620]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 18.9315, 11.6163, 3.32557)
+size = Vector3(9.26416, 0.80957, 14)
+material = SubResource("StandardMaterial3D_yv2ts")
+
+[node name="CSGBox3D14" type="CSGBox3D" parent="ShadowGeometry" unique_id=293907615]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 19.0214, 3.44817, 12.557)
+operation = 2
+size = Vector3(2.4917, 2, 9.15033)
+material = SubResource("StandardMaterial3D_yv2ts")
+
+[node name="CSGBox3D11" type="CSGBox3D" parent="ShadowGeometry" unique_id=1028664317]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.2508, 3.22879, -17.4146)
+size = Vector3(2.63867, 3.72119, 14)
+material = SubResource("StandardMaterial3D_yv2ts")
+
+[node name="physics_objects" type="Node3D" parent="." unique_id=1886595930]
+
+[node name="box1" parent="physics_objects" unique_id=42527455 instance=ExtResource("21_q83i0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.703171, 2.06818, 20.9151)
+
+[node name="box2" parent="physics_objects" unique_id=285543526 instance=ExtResource("21_q83i0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8627, 2.06818, 20.9151)
+
+[node name="box3" parent="physics_objects" unique_id=84649143 instance=ExtResource("21_q83i0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.01581, 2.06818, 20.9151)
+
+[node name="box4" parent="physics_objects" unique_id=837581826 instance=ExtResource("21_q83i0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.33112, 3.06818, 20.9151)
+
+[node name="box5" parent="physics_objects" unique_id=524733412 instance=ExtResource("21_q83i0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1989, 3.06818, 20.9151)
+
+[node name="box11" parent="physics_objects" unique_id=524145424 instance=ExtResource("21_q83i0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.79602, 4.06818, 20.4102)
+
+[node name="box6" parent="physics_objects" unique_id=329244311 instance=ExtResource("21_q83i0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.703171, 2.06818, 19.9151)
+
+[node name="box7" parent="physics_objects" unique_id=1204829740 instance=ExtResource("21_q83i0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8627, 2.06818, 19.9151)
+
+[node name="box8" parent="physics_objects" unique_id=1268344155 instance=ExtResource("21_q83i0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.01581, 2.06818, 19.9151)
+
+[node name="box9" parent="physics_objects" unique_id=56414708 instance=ExtResource("21_q83i0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.33112, 3.06818, 19.9151)
+
+[node name="box10" parent="physics_objects" unique_id=1760928647 instance=ExtResource("21_q83i0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1989, 3.06818, 19.9151)
+
+[node name="Bot" parent="." unique_id=899363947 instance=ExtResource("23_xx824")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.3744507, 0)
