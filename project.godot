@@ -21,6 +21,7 @@ config/icon="res://Title.png"
 
 [filesystem]
 
+import/blender/enabled=false
 import/fbx/enabled=false
 
 [global_group]

@@ -1,0 +1,82 @@
+[gd_scene format=3 uid="uid://dieo0ejeyicrg"]
+
+[ext_resource type="Script" uid="uid://b14jrh6h0r8ws" path="res://Scripts/main_menu.gd" id="1_f7j37"]
+[ext_resource type="Texture2D" uid="uid://ci70pdmi64b5l" path="res://Scenes/bg image.png" id="1_pc006"]
+[ext_resource type="FontFile" uid="uid://ij5ehtsjcvqp" path="res://Scenes/Dracutaz.ttf" id="2_f7j37"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_787fc"]
+texture = ExtResource("1_pc006")
+modulate_color = Color(0.45646393, 0.456464, 0.456464, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pc006"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pc006"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xwboo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_f7j37"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_787fc"]
+
+[node name="MainMenu" type="Node2D" unique_id=749035458]
+script = ExtResource("1_f7j37")
+
+[node name="Panel" type="Panel" parent="." unique_id=1690332088]
+offset_right = 1155.0
+offset_bottom = 638.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_787fc")
+
+[node name="START" type="Button" parent="." unique_id=1146510819]
+modulate = Color(0.7941207, 0.7941206, 0.7941206, 1)
+offset_left = 112.0
+offset_top = 270.0
+offset_right = 371.0
+offset_bottom = 347.0
+theme_override_colors/font_color = Color(0.9801393, 0.9801393, 0.9801393, 1)
+theme_override_fonts/font = ExtResource("2_f7j37")
+theme_override_font_sizes/font_size = 57
+theme_override_styles/normal = SubResource("StyleBoxEmpty_pc006")
+theme_override_styles/hover = SubResource("StyleBoxFlat_pc006")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_xwboo")
+text = "START"
+
+[node name="EXIT" type="Button" parent="." unique_id=514322606]
+modulate = Color(0.7941207, 0.7941206, 0.7941206, 1)
+offset_left = 115.0
+offset_top = 384.0
+offset_right = 380.0
+offset_bottom = 465.0
+theme_override_colors/font_color = Color(0.9801393, 0.9801393, 0.9801393, 1)
+theme_override_fonts/font = ExtResource("2_f7j37")
+theme_override_font_sizes/font_size = 57
+theme_override_styles/normal = SubResource("StyleBoxEmpty_f7j37")
+theme_override_styles/hover = SubResource("StyleBoxFlat_pc006")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_xwboo")
+text = "EXIT
+"
+
+[node name="SETTINGS" type="Button" parent="." unique_id=485644948]
+modulate = Color(0.7941207, 0.7941206, 0.7941206, 1)
+offset_left = 115.0
+offset_top = 495.0
+offset_right = 394.0
+offset_bottom = 583.0
+theme_override_colors/font_color = Color(0.9801393, 0.9801393, 0.9801393, 1)
+theme_override_fonts/font = ExtResource("2_f7j37")
+theme_override_font_sizes/font_size = 57
+theme_override_styles/normal = SubResource("StyleBoxEmpty_787fc")
+theme_override_styles/hover = SubResource("StyleBoxFlat_pc006")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_xwboo")
+text = "SETTINGS"
+
+[node name="Label" type="Label" parent="." unique_id=333525082]
+offset_left = 59.0
+offset_top = 95.0
+offset_right = 292.0
+offset_bottom = 166.0
+theme_override_font_sizes/font_size = 45
+text = "NAME"
+
+[connection signal="pressed" from="START" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="EXIT" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="SETTINGS" to="." method="_on_settings_pressed"]
