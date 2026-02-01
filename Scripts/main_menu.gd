@@ -19,4 +19,4 @@ func _on_exit_pressed() -> void:
 
 
 func _on_settings_pressed() -> void:
-	print("Settings pressed")
+	get_tree().change_scene_to_file("res://Scenes/Settings.tscn")
